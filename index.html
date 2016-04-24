@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Change Calculator</title>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Change Calculator</h1>
+			<div class="row">
+				<form>
+					<div class="col-xs-6">
+						<label for="cost">
+							How much is due for the sale?
+						</label>
+						<input type="text" name="cost" id="cost">
+					</div>
+					<div class="col-xs-6">
+						<label for="change">
+							How much has the customer given you?
+						</label>
+						<input type="text" name="change" id="change">
+					</div>
+				</form>
+			</div>
+			<br>
+			<div class="row" id="button">
+				<button type="button" id="calculateButton">Calculate</button>
+			</div>
+			<div class="row" id="dollarsDiv">
+				<h2>Dollars</h2>
+				<p id="dollarsOwed">
+					0
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">
+					<h3>Quarters</h3>
+					<img src="quarter.jpg" height='100' width ='100'>
+					<div id="quartersOwed">
+						0
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<h3>Dimes</h3>
+					<img src="dime.jpg" height='100' width ='100'>
+					<div id="dimesOwed">
+						0
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<h3>Nickels</h3>
+					<img src="nickel.jpg" height='100' width ='100'>
+					<div id="nickelsOwed">
+						0
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<h3>Pennies</h3>
+					<img src="penny.jpg" height='100' width ='100'>
+					<div id="penniesOwed">
+						0
+					</div>
+				</div>
+			</div>
+			<p id="totalOwed"></p>
+		</div>
+		
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+    	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+
+<html>
